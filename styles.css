@@ -1,0 +1,264 @@
+/** html*//
+html{
+    margin:0px;
+    padding: 0px;
+}
+
+/** header**/
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header h1{
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header .logo{
+    padding-left: 20px;
+    width: 60px;
+    height:60px;
+    animation-name: rotate;
+    animation-duration: 1.5s;
+   
+
+}
+@keyframes rotate{
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/** banner**/
+
+.background{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: auto;
+    background-image: url("image/piscine.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.banner{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    
+    padding-left: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    opacity: 0.9;
+    
+}
+
+.banner h2{
+    text-align: center;
+ 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px ;
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(0, 103, 131);
+    background-color: rgb(240, 240, 240);
+    opacity: 0.9;
+    font-size: 50px;
+    
+   
+}
+
+.banner h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(81, 83, 85);
+    font-size: 30px;
+    padding-top: 0px ;
+    padding-left:20px;
+    margin-left:20px;
+  
+}
+@media only screen and (max-width: 768px) and (min-width: 456px){
+    .banner h2{
+        font-size: 35px;
+    }
+    
+    .banner h3{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    .banner h2{
+        font-size: 25px;
+    }
+    
+    .banner h3{
+        font-size: 15px;
+    }
+}
+
+/**buton**/
+
+.buton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position:sticky;
+    top:0px;
+    background-color: white;
+    z-index:10;
+  
+}
+.buton a{
+    position: relative;
+    background-color: rgb(252, 194, 196);
+    color:rgb(255, 255, 255);
+    height: 30px;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: solid;
+    border-color:rgb(137, 137, 137) ;
+    box-shadow: 5px 5px 10px rgb(187, 170, 170);
+    border-radius:10px ;
+    text-decoration: none;
+    
+}
+
+.buton a:hover{
+    
+    background-color: rgb(255, 197, 197);
+    border-color:rgb(190, 190, 190) ;
+    
+    
+}
+
+
+/** gallery**/
+
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+   
+    width: 100%;
+    background-color:  rgb(66, 66, 66);
+    justify-content: center;
+    align-content: space-around;
+
+}
+.gallery h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding:20px;
+   display:block;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+   
+}
+.gallery img{
+   margin: 20px;
+    width: 300px; 
+    flex-grow: 1;
+   
+}
+@media only screen and (max-width: 768px) and (min-width: 456px){
+    .gallery img{
+        margin: 20px;
+
+         width: 150px; 
+         flex-grow: 1;
+        
+     }
+}
+
+@media only screen and (max-width: 456px) {
+    .gallery img{
+        margin: 5px;
+        width: 120px; 
+        flex-grow: 1;
+        
+    }
+    .gallery h3{
+        font-size: 20px; 
+    }
+}
+
+/**staff*/
+
+.staff{
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+.staff img{
+    width: 30%;
+    height: 30%;
+}
+.staff .brigitte{
+    
+    padding: 80px;
+    width:50%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 456px){
+
+    .staff{
+     flex-direction: column;
+     padding:10px 80px;
+
+    }
+    .staff img{
+        width:50%;
+    }
+    .staff .brigitte{
+       width:100%;
+
+    }
+
+}
+@media only screen and (max-width: 456px) {
+    .staff{
+        flex-direction: column;
+        padding:10px 40px;
+   
+       }
+       .staff img{
+        width:50%;
+       }
+       .staff .brigitte{
+          width:100%;
+          font-size: 15px;
+   
+       }
+    }
+
+
+/** footer **/
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding:20px;
+
+}
